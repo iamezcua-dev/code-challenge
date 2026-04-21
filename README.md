@@ -67,7 +67,16 @@ and helps you visualize the current rankings from them.
    game-stats --filename <your-file-path.extension>
    ```
 
-### Uninstallation
+3. Expected output:
+   ```
+   1. Tarantulas, 6 pts
+   2. Lions, 5 pts
+   3. FC Awesome, 1 pt
+   3. Snakes, 1 pt
+   5. Grouches, 0 pts
+   ```
+
+## Uninstallation
 
 1. To remove this tool, you must execute this command.
    ```sh
