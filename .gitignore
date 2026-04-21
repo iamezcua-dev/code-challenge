@@ -1,2 +1,6 @@
 # Ignore IDE-related metadata
 .idea/
+
+# Ignore Python cache and dynamically-generated stuff
+**/__pycache__/**
+**/*.egg-info/**
