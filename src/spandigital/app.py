@@ -52,7 +52,7 @@ def compute_scoreboard(game_matches: list[str]) -> dict[str, int]:
     return scoreboard
 
 
-def get_teams_ranking(scoreboard: dict[str, int]) -> list[list[str]]:
+def get_teams_ranking(scoreboard: dict[str, int]) -> list[list[str | int]]:
     ranking = []
     previous_score = None
     current_rank = 1
@@ -66,14 +66,14 @@ def get_teams_ranking(scoreboard: dict[str, int]) -> list[list[str]]:
     return ranking
 
 
-def format_ranking(ranking: list[list[str]]) -> list[str]:
+def format_ranking(ranking: list[list[str | int]]) -> list[str]:
     pass
 
 
 def main() -> None:
     raw_data: list[str] = read_input()
     scoreboard: dict[str, int] = compute_scoreboard(raw_data)
-    ranking: list[list[str]] = get_teams_ranking(scoreboard)
+    ranking: list[list[str | int]] = get_teams_ranking(scoreboard)
     # formatted_ranking: list[str] = format_ranking(ranking)
     # print('\n'.join(formatted_ranking))
 
