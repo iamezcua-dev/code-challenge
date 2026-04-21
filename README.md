@@ -72,4 +72,4 @@ and helps you visualize the current rankings from them.
 
 ## Support
 
-If you see something weird, please report it to [Eddie Jobs](iamezcua.dev@gmail.com).
+If you see something weird, please report it to [Eddie Jobs](mailto:iamezcua.dev@gmail.com).
