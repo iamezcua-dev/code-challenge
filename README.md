@@ -24,11 +24,6 @@ and helps you visualize the current rankings from them.
 | RAM           | At least 100 MB of free memory. |
 | CPU           | Just a single core is needed.   |
 
-- Programs
-
-Binary Version
-curl
-
 ### Installation
 
 1. Download `uv` tool using the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
