@@ -11,8 +11,12 @@ where = ['src']
 
 [dependency-groups]
 dev = [
-    "pytest>=9.0.3",
+    "pytest>=9.0.3"
 ]
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+pythonpath = ['src']
 
 [project.scripts]
 game-stats = "spandigital.app:main"
