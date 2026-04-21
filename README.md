@@ -33,7 +33,7 @@ and helps you visualize the current rankings from them.
 ### Installation
 
 1. Download `uv` tool following the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
-2. Make sure to follow all the steps shown in your screen. Verify your installation with `uv --version`.
+2. Make sure to follow all the steps shown on your screen. Verify your installation with `uv --version`.
 
 > [!NOTE]
 > Please make sure you meet the requirements needed for installing `uv`, described in the documentation.
@@ -42,7 +42,7 @@ and helps you visualize the current rankings from them.
     ```sh
     git clone https://github.com/iamezcua-dev/code-challenge.git
     ```
-4. Enter to the generated folder and from there, run:
+4. Navigate to the generated folder and from there, run:
 
    ```sh
    uv tool install .
@@ -54,7 +54,7 @@ and helps you visualize the current rankings from them.
 ## Usage
 
 1. You should have a file containing your game matches, which should meet the following format:
-   ```csv
+   ```txt
    Lions 3, Snakes 3
    Tarantulas 1, FC Awesome 0
    Lions 1, FC Awesome 1
