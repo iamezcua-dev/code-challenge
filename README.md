@@ -17,6 +17,12 @@ and helps you visualize the current rankings from them.
 | Mac     | macOS Catalina or Higher |
 | Linux   | Ubuntu 22.x              |
 
+- Software:
+
+| Software | Reference                                            |
+|----------|------------------------------------------------------|
+| Git      | https://git-scm.com/book/en/v2/Getting-Started-Installing-Git |
+
 - Resources:
 
 | Resource Type | Minimum Requirement             |
@@ -26,28 +32,29 @@ and helps you visualize the current rankings from them.
 
 ### Installation
 
-1. Download `uv` tool using the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
+1. Download `uv` tool following the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
+2. Make sure to follow all the steps shown on your screen. Verify your installation with `uv --version`.
 
 > [!NOTE]
 > Please make sure you meet the requirements needed for installing `uv`, described in the documentation.
 
-2. Clone this repository in your local computer using:
+3. Clone this repository in your local computer using:
     ```sh
     git clone https://github.com/iamezcua-dev/code-challenge.git
     ```
-3. Enter to the generated folder and from there, run:
+4. Navigate to the generated folder and from there, run:
 
    ```sh
    uv tool install .
    ```
 
 > [!NOTE]
-> After you have run this command, you should have a `game-stat` executable ready to use.
+> After you have run this command, you should have a `game-stats` executable ready to use.
 
 ## Usage
 
 1. You should have a file containing your game matches, which should meet the following format:
-   ```csv
+   ```txt
    Lions 3, Snakes 3
    Tarantulas 1, FC Awesome 0
    Lions 1, FC Awesome 1
@@ -60,15 +67,24 @@ and helps you visualize the current rankings from them.
    game-stats --filename <your-file-path.extension>
    ```
 
-### Uninstallation
+3. Expected output:
+   ```
+   1. Tarantulas, 6 pts
+   2. Lions, 5 pts
+   3. FC Awesome, 1 pt
+   3. Snakes, 1 pt
+   5. Grouches, 0 pts
+   ```
+
+## Uninstallation
 
 1. To remove this tool, you must execute this command.
    ```sh
    uv tool uninstall code-challenge
    ```
-2. You can optionally remove the cloned repo and follow the instuctions to uninstall `uv`
+2. You can optionally remove the cloned repo and follow the instructions to uninstall `uv`
    described [here](https://docs.astral.sh/uv/getting-started/installation/#uninstallation).
 
 ## Support
 
-If you see something weird, please report it to [Eddie Jobs](iamezcua.dev@gmail.com).
+If you see something weird, please report it to [Eddie Jobs](mailto:iamezcua.dev@gmail.com).
