@@ -28,8 +28,8 @@ and helps you visualize the current rankings from them.
 
 1. Download `uv` tool using the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
 
-   > [!NOTE]
-   > Please make sure you meet the requirements needed for installing `uv`, described in the documentation.
+> [!NOTE]
+> Please make sure you meet the requirements needed for installing `uv`, described in the documentation.
 
 2. Clone this repository in your local computer using:
     ```sh
@@ -40,8 +40,9 @@ and helps you visualize the current rankings from them.
    ```sh
    uv tool install .
    ```
-   > [!NOTE]
-   > After you have run this command, you should have a `game-stat` executable ready to use.
+
+> [!NOTE]
+> After you have run this command, you should have a `game-stat` executable ready to use.
 
 ## Usage
 
