@@ -67,7 +67,7 @@ and helps you visualize the current rankings from them.
    ```sh
    uv tool uninstall code-challenge
    ```
-2. You can optionally remove the cloned repo and follow the instuctions to uninstall `uv`
+2. You can optionally remove the cloned repo and follow the instructions to uninstall `uv`
    described [here](https://docs.astral.sh/uv/getting-started/installation/#uninstallation).
 
 ## Support
