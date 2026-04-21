@@ -42,7 +42,7 @@ and helps you visualize the current rankings from them.
    ```
 
 > [!NOTE]
-> After you have run this command, you should have a `game-stat` executable ready to use.
+> After you have run this command, you should have a `game-stats` executable ready to use.
 
 ## Usage
 
