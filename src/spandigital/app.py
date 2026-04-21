@@ -67,15 +67,23 @@ def get_teams_ranking(scoreboard: dict[str, int]) -> list[list[str | int]]:
 
 
 def format_ranking(ranking: list[list[str | int]]) -> list[str]:
-    pass
+    formatted_ranking = []
+
+    for stat in ranking:
+        rank = stat[0]
+        team = stat[1]
+        score = stat[2]
+        formatted_ranking.append(f"{rank}. {team}, {score} {"pts" if score != 1 else "pt"}")
+
+    return formatted_ranking
 
 
 def main() -> None:
     raw_data: list[str] = read_input()
     scoreboard: dict[str, int] = compute_scoreboard(raw_data)
     ranking: list[list[str | int]] = get_teams_ranking(scoreboard)
-    # formatted_ranking: list[str] = format_ranking(ranking)
-    # print('\n'.join(formatted_ranking))
+    formatted_ranking: list[str] = format_ranking(ranking)
+    print('\n'.join(formatted_ranking))
 
 
 if __name__ == "__main__":
