@@ -53,6 +53,20 @@ def compute_scoreboard(game_matches: list[str]) -> dict[str, int]:
 
 
 def get_teams_ranking(scoreboard: dict[str, int]) -> list[list[str]]:
+    ranking = []
+    previous_score = None
+    current_rank = 1
+    for rank, items in enumerate(sorted(scoreboard.items(), key=lambda item: (-item[1], item[0])), 1):
+        team, score = items
+        if score != previous_score:
+            current_rank = rank
+        ranking.append([current_rank, team, score])
+        previous_score = score
+
+    return ranking
+
+
+def format_ranking(ranking: list[list[str]]) -> list[str]:
     pass
 
 
@@ -60,7 +74,8 @@ def main() -> None:
     raw_data: list[str] = read_input()
     scoreboard: dict[str, int] = compute_scoreboard(raw_data)
     ranking: list[list[str]] = get_teams_ranking(scoreboard)
-    print(ranking)
+    # formatted_ranking: list[str] = format_ranking(ranking)
+    # print('\n'.join(formatted_ranking))
 
 
 if __name__ == "__main__":
