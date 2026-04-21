@@ -4,13 +4,20 @@ import sys
 def read_input():
     raw_data = []
 
-    if '--filename' in sys.argv:
-        filename = sys.argv[sys.argv.index('--filename') + 1]
-        with open(filename, 'r') as f:
-            raw_data = f.read().splitlines()
+    try:
+        if '--filename' in sys.argv:
+            filename = sys.argv[sys.argv.index('--filename') + 1]
+            with open(filename, 'r') as f:
+                raw_data = f.read().splitlines()
 
-    if len(raw_data) > 0:
-        raw_data = [data for data in raw_data if data.strip() != ""]
+        if len(raw_data) > 0:
+            raw_data = [data for data in raw_data if data.strip() != ""]
+    except FileNotFoundError as e:
+        print(f"Error: File not found - {e}")
+    except IndexError as e:
+        print(f"Please provide a valid filename - {e}")
+    except Exception as e:
+        print(f"Error: {e}")
 
     return raw_data
 
