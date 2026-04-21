@@ -26,16 +26,17 @@ and helps you visualize the current rankings from them.
 
 ### Installation
 
-1. Download `uv` tool using the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
+1. Download `uv` tool following the official docs here: https://docs.astral.sh/uv/getting-started/installation/.
+2. Make sure to follow all the steps shown in your screen. Verify your installation with `uv --version`.
 
 > [!NOTE]
 > Please make sure you meet the requirements needed for installing `uv`, described in the documentation.
 
-2. Clone this repository in your local computer using:
+3. Clone this repository in your local computer using:
     ```sh
     git clone https://github.com/iamezcua-dev/code-challenge.git
     ```
-3. Enter to the generated folder and from there, run:
+4. Enter to the generated folder and from there, run:
 
    ```sh
    uv tool install .
