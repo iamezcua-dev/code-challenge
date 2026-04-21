@@ -17,6 +17,12 @@ and helps you visualize the current rankings from them.
 | Mac     | macOS Catalina or Higher |
 | Linux   | Ubuntu 22.x              |
 
+- Software:
+
+| Software | Reference                                            |
+|----------|------------------------------------------------------|
+| Git      | https://git-scm.com/book/en/v2/Getting-Started-Installing-Git |
+
 - Resources:
 
 | Resource Type | Minimum Requirement             |
